@@ -1,22 +1,24 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "tutorAPI",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EGWeeks/axerServer.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EGWeeks/axerServer/issues"
-  },
-  "homepage": "https://github.com/EGWeeks/axerServer#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "body-parser": "~1.13.2",
+    "cors": "^2.7.1",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "express-jwt": "^3.3.0",
+    "jsonwebtoken": "^5.7.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "bcrypt": "^0.8.5",
+    "dotenv": "^2.0.0",
+    "knex": "^0.10.0",
+    "pg": "^4.5.1"
   }
 }
